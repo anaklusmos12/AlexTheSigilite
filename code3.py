@@ -74,7 +74,7 @@ def getCommand(tekst):
 def glas():
     r = sr.Recognizer()
     with sr.Microphone() as source:
-        print("Say something!")
+        print("Spregovorite")
         audio = r.listen(source)
     try:
         return(r.recognize_google(audio))
