@@ -39,6 +39,8 @@ def getCommand(tekst):
                 pywhatkit.playonyt(tekst)
             elif 'date' in tekst:
                 talk('current date is ' + str(datum.replace('-', ' ')))
+            elif 'joke' in tekst:
+                talk(pyjoke.get_joke())
             elif 'who is' in tekst:
                 tekst = tekst.replace('who is', '')
                 talk('searching wikipedia for' + tekst)
